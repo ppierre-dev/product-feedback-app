@@ -1,0 +1,66 @@
+:root {
+    --body-color: #f7f8fd;
+    --text-color-gray: #647196;
+    --title-color-blue: #3a4374;
+    --bg-buttons-blue-clair: #f2f4ff;
+    --text-color-clair-buttons: #4661e6;
+    --bg-marine-blue: #373f68;
+    --color-purple: #ad1fea;
+    --color-saumon: #f49f85;
+    --color-cyan: #62bcfa;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url('../assets/font/Jost.ttf');
+}
+
+body {
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Feedback Details Page */
+
+.feedbackDetails {
+    width: 1024px;
+    margin: 30px auto;
+    font-family: Jost;
+    background-color: var(--body-color);
+}
+
+.feedbackDetails__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedbackDetails__header__back-button {
+    background-color: transparent;
+    border: none;
+    color: var(--title-color-blue)
+}
+
+.feedbackDetails__header__back-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.feedbackDetails__header__back-button span {
+    margin-right: 10px;
+}
+
+.feedbackDetails__header__edit-button {
+    padding: 10px 15px;
+    background-color: var(--text-color-clair-buttons);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+.feedbackDetails__header__edit-button:hover {
+    cursor: pointer;
+    background-color: rgba(var(--text-color-clair-buttons), 0.2);
+}
