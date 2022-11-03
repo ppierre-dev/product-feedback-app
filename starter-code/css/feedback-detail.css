@@ -25,6 +25,8 @@ body {
 /* Feedback Details Page */
 
 .feedbackDetails {
+    display: flex;
+    flex-direction: column;
     width: 1024px;
     margin: 30px auto;
     font-family: Jost;
@@ -170,10 +172,11 @@ body {
 .feedbackDetails__commentBlock__footer {
     display: flex;
     margin-top: 20px;
+    justify-content: space-around;
 }
 
 .feedbackDetails__commentBlock__footer-input {
-    width: 100%;
+    width: 70%;
     resize: none;
     min-height: 100px;
     border: 1px solid var(--bg-marine-blue);
@@ -185,14 +188,93 @@ body {
     outline: none;
 }
 
+.feedbackDetails__commentBlock__footer-input:hover{
+    cursor: pointer;
+}
+
 .feedbackDetails__commentBlock__footer-send {
     background-color: var(--color-purple);
     height: fit-content;
-    width: 20%;
     border: none;
     font-weight: 600;
-    padding: 10px;
+    padding: 15px 25px;
+    color: white;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+
+.feedbackDetails__commentBlock__responses {
+    width: 80%;
+    float: right;
+}
+
+.feedbackDetails__commentBlock__comment {
+    margin-top: 50px;
+}
+
+.feedbackDetails__commentBlock__main-text__reply {
+    color: var(--color-purple);
+    font-weight: 600;
+}
+
+.feedbackDetails__newComment__body-textarea {
+    width: 100%;
+    resize: none;
+    min-height: 100px;
+    border: 1px solid var(--bg-marine-blue);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.feedbackDetails__newComment__body-textarea:focus {
+    outline: none;
+}
+
+.feedbackDetails__newComment__body-textarea:hover{
+    cursor: pointer;
+}
+
+.feedbackDetails__newComment__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.feedbackDetails__newComment__footer-postComment button {
+    background-color: var(--color-purple);
+    height: fit-content;
+    border: none;
+    font-weight: 600;
+    padding: 15px 25px;
     color: white;
     border-radius: 12px;
     margin-left: 50px;
+}
+
+/* TABLET VERSION */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .feedbackDetails {
+        width: auto;
+        padding: 50px 30px;
+        margin: 0;
+    }
+
+    .feedbackDetails__commentBlock__footer {
+        display: none;
+    }
+}
+
+/* PHONE VERSION */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    .feedbackDetails {
+        width: auto;
+        padding: 50px 15px;
+        margin: 0;
+        font-size: .8rem;
+    }
+
+    .feedbackDetails__commentBlock__footer {
+        display: none;
+    }
 }

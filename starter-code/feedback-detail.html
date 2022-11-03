@@ -14,13 +14,16 @@
 <body>
   <div class="feedbackDetails">
     <div class="feedbackDetails__header">
-      <button class="feedbackDetails__header__back-button"><span><img src="assets/shared/icon-arrow-left.svg" alt="icon-arrow-left"></span>Go Back</button>
+      <button class="feedbackDetails__header__back-button"><span><img src="assets/shared/icon-arrow-left.svg"
+            alt="icon-arrow-left"></span>Go Back</button>
       <button class="feedbackDetails__header__edit-button">Edit Feedback</button>
     </div>
     <div class="feedbackDetails__currentComment">
       <div class="feedbackDetails__currentComment__content-item">
         <div class="feedbackDetails__currentComment__content-item__upvotes">
-          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 6l4-4 4 4" stroke="#4661E6" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 6l4-4 4 4" stroke="#4661E6" stroke-width="2" fill="none" fill-rule="evenodd" />
+          </svg>
           <p>99</p>
         </div>
         <div class="feedbackDetails__currentComment__content-item__content">
@@ -29,7 +32,11 @@
           <p class="feedbackDetails__currentComment__content-item__content-tag">Feature</p>
         </div>
         <div class="feedbackDetails__currentComment__content-item__comments">
-          <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z" fill="#CDD2EE" fill-rule="nonzero"/></svg>
+          <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z"
+              fill="#CDD2EE" fill-rule="nonzero" />
+          </svg>
           <p>4</p>
         </div>
       </div>
@@ -53,7 +60,9 @@
         </div>
         <div class="feedbackDetails__commentBlock__main">
           <p class="feedbackDetails__commentBlock__main-text">
-            Also, please allow styles to be applied based on system preferences. I would love to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright background it currently has.
+            Also, please allow styles to be applied based on system preferences. I would love to be able to browse
+            Frontend Mentor in the evening after my device’s dark mode turns on without the bright background it
+            currently has.
           </p>
         </div>
         <div class="feedbackDetails__commentBlock__footer">
@@ -67,38 +76,107 @@
       </div>
       <div class="feedbackDetails_separator"></div>
       <div class="feedbackDetails__commentBlock">
-        <div class="feedbackDetails__commentBlock__header">
-          <div class="feedbackDetails__commentBlock__header__infos">
-            <div class="feedbackDetails__commentBlock__header__infos-avatar">
-              <img src="assets/user-images/image-james.jpg" alt="avatar">
+        <div class="feedbackDetails__commentBlock__comment">
+          <div class="feedbackDetails__commentBlock__header">
+            <div class="feedbackDetails__commentBlock__header__infos">
+              <div class="feedbackDetails__commentBlock__header__infos-avatar">
+                <img src="assets/user-images/image-james.jpg" alt="avatar">
+              </div>
+              <div class="feedbackDetails__commentBlock__header__infos-name">
+                <h4>James Skinner</h4>
+                <p>@hummingbird1</p>
+              </div>
             </div>
-            <div class="feedbackDetails__commentBlock__header__infos-name">
-              <h4>James Skinner</h4>
-              <p>@hummingbird1</p>
+            <div class="feedbackDetails__commentBlock__header-reply">
+              <button class="feedbackDetails__commentBlock__header-reply__button">Reply</button>
             </div>
           </div>
-          <div class="feedbackDetails__commentBlock__header-reply">
-            <button class="feedbackDetails__commentBlock__header-reply__button">Reply</button>
+          <div class="feedbackDetails__commentBlock__main">
+            <p class="feedbackDetails__commentBlock__main-text">
+              Second this! I do a lot of late night coding and reading. Adding a dark theme can be great for preventing
+              eye strain and the headaches that result. It’s also quite a trend with modern apps and apparently saves
+              battery life.
+            </p>
           </div>
         </div>
-        <div class="feedbackDetails__commentBlock__main">
-          <p class="feedbackDetails__commentBlock__main-text">
-            Second this! I do a lot of late night coding and reading. Adding a dark theme can be great for preventing eye strain and the headaches that result. It’s also quite a trend with modern apps and  apparently saves battery life.
-          </p>
-        </div>
-        <div class="feedbackDetails__commentBlock__footer">
-          <textarea class="feedbackDetails__commentBlock__footer-input">
+        <div class="feedbackDetails__commentBlock__responses">
+          <div class="feedbackDetails__commentBlock__comment">
+            <div class="feedbackDetails__commentBlock__header">
+              <div class="feedbackDetails__commentBlock__header__infos">
+                <div class="feedbackDetails__commentBlock__header__infos-avatar">
+                  <img src="assets/user-images/image-anne.jpg" alt="avatar">
+                </div>
+                <div class="feedbackDetails__commentBlock__header__infos-name">
+                  <h4>Anne Valentine</h4>
+                  <p>@annev1990</p>
+                </div>
+              </div>
+              <div class="feedbackDetails__commentBlock__header-reply">
+                <button class="feedbackDetails__commentBlock__header-reply__button">Reply</button>
+              </div>
+            </div>
+            <div class="feedbackDetails__commentBlock__main">
+              <p class="feedbackDetails__commentBlock__main-text">
+                <span class="feedbackDetails__commentBlock__main-text__reply">@hummingbird1</span>
+                While waiting for dark mode, there are browser extensions that will also do the job. Search for 'dark
+                theme' followed by your browser. There might be a need to turn off the extension for sites with
+                naturally black backgrounds though.
+              </p>
+            </div>
+          </div>
+          <div class="feedbackDetails__commentBlock__comment">
+            <div class="feedbackDetails__commentBlock__header">
+              <div class="feedbackDetails__commentBlock__header__infos">
+                <div class="feedbackDetails__commentBlock__header__infos-avatar">
+                  <img src="assets/user-images/image-ryan.jpg" alt="avatar">
+                </div>
+                <div class="feedbackDetails__commentBlock__header__infos-name">
+                  <h4>Ryan Welles</h4>
+                  <p>@voyager.344</p>
+                </div>
+              </div>
+              <div class="feedbackDetails__commentBlock__header-reply">
+                <button class="feedbackDetails__commentBlock__header-reply__button">Reply</button>
+              </div>
+            </div>
+            <div class="feedbackDetails__commentBlock__main">
+              <p class="feedbackDetails__commentBlock__main-text">
+                <span class="feedbackDetails__commentBlock__main-text__reply">@annev1990</span>
+                Good point! Using any kind of style extension is great and can be highly customizable, like the ability
+                to change contrast and brightness. I'd prefer not to use one of such extensions, however, for security
+                and privacy reasons.
+              </p>
+            </div>
+            <div class="feedbackDetails__commentBlock__footer">
+              <textarea class="feedbackDetails__commentBlock__footer-input">
 
-          </textarea>
-          <button class="feedbackDetails__commentBlock__footer-send">
-            Post Reply
-          </button>
+              </textarea>
+              <button class="feedbackDetails__commentBlock__footer-send">
+                Post Reply
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="feedbackDetails_separator"></div>
     <div class="feedbackDetails__newComment">
-
+      <div class="feedbackDetails__newComment__header">
+        <h4>Add Comment</h4>
+      </div>
+      <div class="feedbackDetails__newComment__body">
+        <textarea class="feedbackDetails__newComment__body-textarea" name="addNewComment" id="addNewComment"></textarea>
+      </div>
+      <div class="feedbackDetails__newComment__footer">
+        <div class="feedbackDetails__newComment__footer-textleft">
+          <p>255 characters left</p>
+        </div>
+        <div class="feedbackDetails__newComment__footer-postComment">
+          <button>Post Comment</button>
+        </div>
+      </div>
     </div>
   </div>
 </body>
+
 </html>
