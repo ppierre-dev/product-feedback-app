@@ -273,6 +273,11 @@ body {
     margin: auto;
 }
 
+.homepage__main__content-item__comments a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
 .homepage__main__content-item__comments p {
     font-weight: 700;
 }
